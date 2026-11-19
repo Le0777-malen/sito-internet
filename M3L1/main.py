@@ -31,7 +31,7 @@ def random_animal():
     animals = [
         '<img src="https://images.dog.ceo/breeds/hound-walker/n02089867_1030.jpg" alt="Dog Image">',
         '<img src="https://cdn2.thecatapi.com/images/MTY3ODIyMQ.jpg" alt="Cat Image">'
-
+     return random.choice(animals)
 
 @app.route("/pw")
 def gen_pass(pass_length):
@@ -43,4 +43,4 @@ def gen_pass(pass_length):
         
     return f'<p>La password generata è: {password}</p>'
     ]
-    return random.choice(animals)
+   
